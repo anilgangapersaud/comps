@@ -2,15 +2,19 @@ import { Component } from '@angular/core';
 import { TableComponent } from '../table/table.component';
 import { DividerComponent } from '../../shared/divider/divider.component';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'app-collections-home',
   standalone: true,
-  imports: [TableComponent, DividerComponent, CommonModule],
+  imports: [RouterOutlet, RouterLink, RouterModule, TableComponent, DividerComponent, CommonModule, TabsComponent],
   templateUrl: './collections-home.component.html',
   styleUrl: './collections-home.component.css'
 })
 export class CollectionsHomeComponent {
+
+  partOfLink = 'hi';
 
   data = [
     { name: 'James', age: 24, job: 'Designer', employed: true },
