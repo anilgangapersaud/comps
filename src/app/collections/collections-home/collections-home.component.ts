@@ -13,9 +13,7 @@ import { TabsComponent } from '../tabs/tabs.component';
   styleUrl: './collections-home.component.css'
 })
 export class CollectionsHomeComponent {
-
-  partOfLink = 'hi';
-
+  
   data = [
     { name: 'James', age: 24, job: 'Designer', employed: true },
     { name: 'Jill',  age: 26, job: 'Engineer', employed: false },
